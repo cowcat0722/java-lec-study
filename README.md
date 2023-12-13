@@ -4,4 +4,6 @@
 - 캐스팅(형변환)
 - 상수(변할수 없는 값, final)
 - 변수 작성법
-- Static
+- Static, Heap
+- Scanner
+- 삼항연산자
