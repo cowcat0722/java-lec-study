@@ -13,7 +13,6 @@ public class MiniProject03 {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         if(a == 1) {
-
             System.out.print("화씨 온도를 입력하시오: ");
             Scanner sc1 = new Scanner(System.in);
             double f1 = sc1.nextDouble();
@@ -30,5 +29,6 @@ public class MiniProject03 {
         }else{
             System.out.println("번호를 잘못 입력하셨습니다.");
         }
+
     }
 }
