@@ -2,22 +2,9 @@ package ex03;
 
 import java.util.Arrays;
 
-/***
- * 1회전(4바퀴)
- *
- * (1) 5, 8 비교 (변화 없음)
- *
- * (2) 8, 2 비교 (5, 2, 8, 4, 3)
- *
- * (3) 8, 4 비교 (5, 2, 4, 8, 3)
- *
- * (4) 8, 3 비교 (5, 2, 4, 3, 8)
- */
-public class BubbleTest {
+public class BubbleEx01 { //static을 찾을때는 class명으로 찾는다. BubbleEx01.bubble
 
-
-    public static void main(String[] args) {
-        int[] arr = {5,8,2,4,3};
+    static void bubble(int[] arr){
         final int N = arr.length;
 
         int temp;
@@ -31,5 +18,13 @@ public class BubbleTest {
             }
         }
         System.out.println(Arrays.toString(arr));
+    }
+
+
+    public static void main(String[] args) {
+        int[] arr = {5,8,2,4,3};
+        int[] arr2 = {5,8,2,4,3,100,25,30,16,89};
+        BubbleEx01.bubble(arr);
+        bubble(arr2); // 같은 class에서는 class명 생략 가능.
     }
 }
