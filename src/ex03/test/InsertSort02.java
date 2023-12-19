@@ -6,7 +6,7 @@ public class InsertSort02 {
     public static void main(String[] args) {
         int[] arr = {5, 8, 2, 4, 3};
         int temp;
-        int N = arr.length
+        int N = arr.length;
         // 1회전
         if(arr[1]<arr[0]){
             //스왑
@@ -55,7 +55,7 @@ public class InsertSort02 {
         }
 
         for (int i = 1; i < arr.length ; i++) {
-            int key = arr[i]
+            int key = arr[i];
 
         }
 
