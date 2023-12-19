@@ -1,5 +1,7 @@
 package ex04.test;
 
+
+
 public class ScopeEx01 {
 
     int n1 = 1;
@@ -21,4 +23,4 @@ public class ScopeEx01 {
         System.out.println(2);
 
     }
-}
+ }
