@@ -33,6 +33,7 @@ public class LottoEx01 {
                 }
             }
         }
+        Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
     }
 }
