@@ -6,6 +6,7 @@ class Box{
     double getVolume(){
         return (double) width*heigth*length;
     }
+
 }
 
 public class BoxTest {
