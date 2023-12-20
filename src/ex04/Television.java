@@ -2,9 +2,9 @@ package ex04;
 
 public class Television {
 
-    int chnnel; // 채널 번호
-    int volume; // 볼륨
-    boolean onOff; // 전원 상태
+     int chnnel; // 채널 번호
+     int volume; // 볼륨
+     boolean onOff; // 전원 상태
 
     public static void main(String[] args) {
         Television myTv = new Television();
