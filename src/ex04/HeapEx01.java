@@ -14,4 +14,5 @@ class Cat{
 
 public class HeapEx01 {
     Cat c = new Cat();
+
 }
