@@ -19,8 +19,13 @@ public class BankApp {
         // 4. 이체 (ssar -> bori 이체)
         BankService.이체(ssarAccount,boriAccount,amount);
 
+        // 5. 객체 상태 확인.
         System.out.println(ssarAccount);
         System.out.println(boriAccount);
+
+        // 6. 출금
+        BankService.출금(ssarAccount, amount);
+
 
     }
 }

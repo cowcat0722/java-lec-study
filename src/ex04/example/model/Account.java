@@ -5,6 +5,13 @@ public class Account {
     private long balance;
     private int userId;
 
+    public boolean 잔액부족하니(long amount){
+        if(balance < amount){
+            return true;
+        }
+        return false;
+    }
+
     // 매서드는 하나의 책임만을 가지는게 좋다.
     public void 출금(long amount){
         this.balance = this.balance - amount;
