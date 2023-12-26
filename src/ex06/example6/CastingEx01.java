@@ -2,6 +2,7 @@ package ex06.example6;
 
 class Protoss{
 
+
 }
 
 class Zealot extends Protoss{
