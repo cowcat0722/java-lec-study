@@ -38,5 +38,15 @@ public class ObEx01 {
         if(account.toString().equals(account2.toString())){
             System.out.println("같아요2");
         }
+
+        String s1 = new String("가");
+        String s2 = new String("가");
+        System.out.println(s1.hashCode());
+        System.out.println(s2.hashCode());
+        if(s1 == s2){
+            System.out.println("같아요3");
+        }
+
+
     }
 }
