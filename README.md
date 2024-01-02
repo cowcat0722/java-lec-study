@@ -21,3 +21,6 @@
 - 추상 클래스
 - 인터페이스
 - 컴포지션
+- vi 에디터 사용법
+- git rebase, reset
+- try-catch(예외처리)

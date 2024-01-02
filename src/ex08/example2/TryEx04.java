@@ -18,9 +18,6 @@ class Repository2 {
 class Controller2 {
     void join(String id, String pw) throws RuntimeException {
         System.out.println("컨트롤러 회원가입 호출됨");
-        if (id.length() < 4) {
-            throw new RuntimeException("Controller : id의 길이가 4자 이상이어야 합니다.");
-        }
 
         Repository2 repo = new Repository2();
         repo.insert(id, pw);
