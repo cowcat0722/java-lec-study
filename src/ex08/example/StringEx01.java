@@ -25,7 +25,7 @@ public class StringEx01 {
         String string = "";
         for (int i = 0; i < encodingData.length(); i++) {
             if (i % 2 == 1) {
-                string = encodingData.charAt(i);
+                string = string + encodingData.charAt(i);
             }
         }
         return answer;
@@ -33,17 +33,20 @@ public class StringEx01 {
 
     public static void main(String[] args) {
         String data = "AABBBCCCCDDDDD"; // Byte -> 14Byte
-        String data = "A2B3C4D5";
+        String encodingdata = "A2B3C4D5";
 
         String answer = "";
         String string = "";
-        for (int i = 0; i < data.length(); i++) {
-            if (i % 2 == 1) {
-                string = Character.toString(data.charAt(i));
+        for (int i = 0; i < encodingdata.length(); i++) {
+            if (i % 2 == 0) {
+                string = string + (encodingdata.charAt(i));
             }else{
-                
+                for (int j = 0; j < encodingdata.charAt(i); j++) {
+                    string = string + (encodingdata.charAt(i-1));
+                }
             }
         }
+        System.out.println(string);
 
         // 인코딩 A2B3C4D5
         System.out.println(encoding(data));
