@@ -38,5 +38,6 @@ public class GenericMethodTest {
         // 다운캐스팅
         User ob = (User) m.getData();
         ob.hello();
+
     }
 }
