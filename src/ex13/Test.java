@@ -1,14 +1,15 @@
 package ex13;
 
+import java.util.*;
+
+
 class Solution {
-    public int solution(String my_string) {
-        int answer = 0;
-        int a;
-        for(int i = 0 ; i<my_string.length();i++){
-            try{
-                a = Integer.parseInt(String.valueOf(my_string.charAt(i)));
-                answer = answer+a;
-            }catch(Exception e){
+    public int[] solution(int[] array) {
+        int[] answer = {array[0],0};
+        for(int i=1;i<array.length;i++){
+            if(answer[0]<array[i]){
+                answer[0] = array[i];
+                answer[1] = i;
             }
         }
         return answer;
@@ -18,7 +19,8 @@ class Solution {
 public class Test {
     public static void main(String[] args) {
         Solution s = new Solution();
-        System.out.println(s.solution("123b"));
+        int[] arr = {1,8,3};
+        System.out.println(Arrays.toString(s.solution(arr)));
 
     }
 }
