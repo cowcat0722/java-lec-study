@@ -1,7 +1,7 @@
 package coffee;
 
 public class Barista {
-    public void makeCoffee(){
-
+    public Coffee makeCoffee(){
+        return new Coffee();
     }
 }
