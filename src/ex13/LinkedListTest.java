@@ -8,7 +8,7 @@ public class LinkedListTest {
 
         list.add("MILK");
         list.add("BREAD");
-        list.add("BUTTER"); // MILK BREAK BUTTER
+        list.add("BUTTER"); // MILK BREAD BUTTER
         list.add(1,"APPLE"); // MILK APPLE BREAD BUTTER 삽입된다.
         list.set(2,"GRAPE"); // MILK APPLE GRAPE BUTTER
 
