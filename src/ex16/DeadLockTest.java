@@ -6,8 +6,7 @@ public class DeadLockTest {
         final String res2 = "Silver";
 
         Thread t1 = new Thread(() -> {
-            sy
-        })
+        });
 
     }
 }
