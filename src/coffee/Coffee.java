@@ -1,5 +1,13 @@
 package coffee;
 
+import java.awt.*;
+
 public class Coffee {
-    public String name = "아메리카노";
+    private String name;
+    private int price;
+
+    public Coffee(String name, int price) {
+        this.name = name;
+        this.price = price;
+    }
 }

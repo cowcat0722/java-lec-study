@@ -1,10 +1,12 @@
 package ex13;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.TreeSet;
 
 public class SetTest {
     public static void main(String[] args) {
-        HashSet<String> set = new HashSet<>();
+        TreeSet<String> set = new TreeSet<>();
 
         set.add("Milk");
         set.add("Bread");

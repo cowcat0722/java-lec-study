@@ -7,7 +7,7 @@ public class MapTest {
     public static void main(String[] args) {
         Map<String,String> map = new HashMap<>();
 
-        map.put("kim","1234");
+        map.put("kim","1234"); // 항목 추가
         map.put("park","pass");
         map.put("lee","word");
 
@@ -15,10 +15,11 @@ public class MapTest {
 
         for(String key : map.keySet()){
             String value = map.get(key);
-            System.out.println("Key: " + key + " value: "+ value);
+            System.out.println("Key: " + key + ", value: "+ value);
         }
 //        map.remove("kim");
-        map.put("choi","password");
+        map.put("choi","password"); // 항목 하나 더 추가
         System.out.println(map);
+
     }
 }
