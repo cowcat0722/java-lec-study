@@ -11,12 +11,12 @@ public class QueueTest {
             q.add(i);
         }
 
-        System.out.println("큐 : "+q);
+        System.out.println("큐 : "+q); // 1부터 5까지 순차적으로 데이터가 들어감
 
-        int e = q.remove();
+        int e = q.remove(); // FIFO로 인해 맨처음 들어간 데이터가 삭제됨
         System.out.println("삭제된 요소 : "+e);
         System.out.println("큐 : "+q);
-        int r = q.remove();
+        int r = q.remove(); // FIFO로 인해 그 다음 들어간 데이터가 삭제됨
         System.out.println("삭제된 요소 : "+r);
         System.out.println("큐 : "+q);
     }
