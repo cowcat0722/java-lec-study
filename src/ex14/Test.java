@@ -10,7 +10,7 @@ public class Test {
         List<String> sublist = list.stream() // 스트림 생성
                 .filter(s->s.startsWith("C"))   // 스트림 처리
                 .sorted()                       // 스트림 처리
-                .collect(Collectors.toList());  // 결과 생성
+                .toList();  // 결과 생성
 
         System.out.println(sublist); // 결과 출력
     }
