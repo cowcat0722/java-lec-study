@@ -17,7 +17,6 @@ public class Server {
                     new InputStreamReader(socket.getInputStream(),
                             "UTF-8")
             );
-
             while (true) {
                 String msg = br.readLine();
 
@@ -25,10 +24,8 @@ public class Server {
 
                 System.out.println(msg);
             }
-
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 }
