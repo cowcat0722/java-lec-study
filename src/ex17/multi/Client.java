@@ -11,10 +11,10 @@ public class Client {
     public static void main(String[] args) throws IOException {
 
  //       try {
-            Socket socket = new Socket("192.168.0.93",30000); // 서버 연결
+            Socket socket = new Socket("192.168.0.35",30000); // 서버 연결
 
             // send
-            Thread send = new Thread(() -> {
+            new Thread(() -> {
                 try {
                     Scanner sc = new Scanner(System.in);
                     PrintWriter pw = new PrintWriter(socket.getOutputStream(),true);
@@ -26,10 +26,10 @@ public class Client {
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
-            });
+            }).start();
 
             // receive
-            Thread receive = new Thread(() -> {
+            new Thread(() -> {
                 try {
                     BufferedReader br = new BufferedReader(
                             new InputStreamReader(socket.getInputStream(),"UTF-8")
@@ -42,10 +42,8 @@ public class Client {
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
-            } );
+            } ).start();
 
-            send.start();
-            receive.start();
 //        } catch (IOException e) {
 //            throw new RuntimeException(e);
 //        }
