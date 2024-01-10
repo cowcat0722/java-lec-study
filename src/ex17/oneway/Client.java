@@ -22,7 +22,7 @@ public class Client {
             bw.flush();
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
     }
